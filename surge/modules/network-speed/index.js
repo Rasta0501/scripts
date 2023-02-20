@@ -17,15 +17,16 @@ let content = ''
   }
   const mb = $.lodash_get(arg, 'mb') || 1
   const bytes = mb * 1024 * 1024
-  const start = Date.now()
+  let start = Date.now()
   const res = await $.http.get({
     url: `https://speed.cloudflare.com/__down?bytes=${bytes}`
   })
+  const time = $.lodash_get(res, 'headers.cf-meta-request-time')
   const end = Date.now()
-  const duration = (end - start) / 1000
+  const duration = (end - time || start) / 1000
   const speed = mb / duration
   title = `网络速率`
-  content = `${round(speed * 8, 2)} Mbps\n${round(speed, 2)} MB/s\n总耗时: ${round(duration, 2)}s\n执行时间: ${new Date().toTimeString().split(' ')[0]}`
+  content = `${round(speed * 8, 2)} Mbps\n${round(speed, 2)} MB/s\n耗时: ${round(duration, 2)}s\n执行时间: ${new Date().toTimeString().split(' ')[0]}`
   if ($.isTile()) {
     await notify('网络速率', '面板', '查询完成')
   } else if(!$.isPanel()) {
