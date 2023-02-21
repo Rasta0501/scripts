@@ -53,15 +53,20 @@ var $prefs = {
 }
 
 var $notify = (title = '', subt = '', desc = '', opts) => {
-  const toEnvOpts = rawopts => {
+  const toEnvOpts = (rawopts) => {
     if (!rawopts) return rawopts
     if (typeof rawopts === 'string') {
-      return { url: rawopts }
+      if ('undefined' !== typeof $loon) return rawopts
+      else return { url: rawopts }
     } else if (typeof rawopts === 'object') {
-      let openUrl = rawopts['open-url'] || rawopts.url || rawopts.openUrl
-      // let mediaUrl = rawopts['media-url'] || rawopts.mediaUrl
-      // let updatePasteboard = rawopts['update-pasteboard'] || rawopts.updatePasteboard
-      return { url: openUrl }
+      if ('undefined' !== typeof $loon) {
+        let openUrl = rawopts.openUrl || rawopts.url || rawopts['open-url']
+        let mediaUrl = rawopts.mediaUrl || rawopts['media-url']
+        return { openUrl, mediaUrl }
+      } else {
+        let openUrl = rawopts.url || rawopts.openUrl || rawopts['open-url']
+        return { url: openUrl }
+      }
     } else {
       return undefined
     }
