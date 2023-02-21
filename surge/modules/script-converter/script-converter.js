@@ -54,9 +54,10 @@ var $prefs = {
 
 var $notify = (title = '', subt = '', desc = '', opts) => {
   const toEnvOpts = (rawopts) => {
-    if (!rawopts) return rawopts
+    if (!rawopts) return rawopts 
     if (typeof rawopts === 'string') {
       if ('undefined' !== typeof $loon) return rawopts
+      else if('undefined' !== typeof $rocket) return rawopts
       else return { url: rawopts }
     } else if (typeof rawopts === 'object') {
       if ('undefined' !== typeof $loon) {
@@ -65,6 +66,7 @@ var $notify = (title = '', subt = '', desc = '', opts) => {
         return { openUrl, mediaUrl }
       } else {
         let openUrl = rawopts.url || rawopts.openUrl || rawopts['open-url']
+        if('undefined' !== typeof $rocket) return openUrl
         return { url: openUrl }
       }
     } else {
