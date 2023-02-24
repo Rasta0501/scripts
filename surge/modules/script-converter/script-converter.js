@@ -132,7 +132,11 @@ let url
   .catch(async e => {
     $.logErr(e)
     const msg = `${$.lodash_get(e, 'message') || $.lodash_get(e, 'error') || e}`
-    await notify(`脚本转换`, `❌`, msg, url)
+    if($.isShadowrocket() && msg.includes(`未能完成操作`)) {
+      $.log(`脚本转换`, `⚠️`, msg, url)
+    } else {
+      await notify(`脚本转换`, `❌`, msg, url)
+    }
     result = {
       response: {
         status: 500,
