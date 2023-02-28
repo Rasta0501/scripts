@@ -1,15 +1,15 @@
 {
-  "id": "rasta0501.app.sub",
-  "name": "@rasta0501 的应用订阅",
-  "author": "@rasta0501",
-  "icon": "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/gist/asset/avatar.png",
-  "repo": "https://github.com/rasta0501/scripts/tree/main",
+  "id": "xream.app.sub",
+  "name": "@xream 的应用订阅",
+  "author": "@xream",
+  "icon": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/avatar.png",
+  "repo": "https://github.com/xream/scripts/tree/main",
   "apps": [
     {
-      "id": "rasta0501.10010v4",
+      "id": "xream.10010v4",
       "name": "联通余量(v4)",
       "descs_html": [
-        "<a href=\"https://github.com/rasta0501/scripts/tree/main/surge/modules/10010v4\">查看文档</a>",
+        "<a href=\"https://github.com/Rasta0501/scripts/tree/main/surge/modules/10010v4\">查看文档</a>",
         "<a onClick=\"window.location.reload(true);\"><b style='color: yellow'>点此刷新</b></a>",
         "<h4 style='color: red'>因为数据会覆盖 请务必先刷新 再修改 再保存</h4>",
         "<b style='color: green'>登录方式一</b>",
@@ -31,44 +31,44 @@
         "4. 手动执行 查看结果"
       ],
       "keys": [
-        "@rasta0501.10010v4.debug",
-        "@rasta0501.10010v4.mobile",
-        "@rasta0501.10010v4.password",
-        "@rasta0501.10010v4.appId",
-        "@rasta0501.10010v4.cookie",
-        "@rasta0501.10010v4.token_online",
-        "@rasta0501.10010v4.min_usage",
-        "@rasta0501.10010v4.normal_limited_only",
-        "@rasta0501.10010v4.script_only",
-        "@rasta0501.10010v4.title",
-rasta0501        "@rasta0501.10010v4.subt",
-        "@rasta0501.10010v4.desc",
-        "@rasta0501.10010v4.bark",
-        "@rasta0501.10010v4.pkgs",
-        "@rasta0501.10010v4.last",
-        "@rasta0501.10010v4.today",
-        "@rasta0501.10010v4.config",
-        "@rasta0501.10010v4.vars"
+        "@xream.10010v4.debug",
+        "@xream.10010v4.mobile",
+        "@xream.10010v4.password",
+        "@xream.10010v4.appId",
+        "@xream.10010v4.cookie",
+        "@xream.10010v4.token_online",
+        "@xream.10010v4.min_usage",
+        "@xream.10010v4.normal_limited_only",
+        "@xream.10010v4.script_only",
+        "@xream.10010v4.title",
+        "@xream.10010v4.subt",
+        "@xream.10010v4.desc",
+        "@xream.10010v4.bark",
+        "@xream.10010v4.pkgs",
+        "@xream.10010v4.last",
+        "@xream.10010v4.today",
+        "@xream.10010v4.config",
+        "@xream.10010v4.vars"
       ],
-      "author": "@rasta0501",
-      "repo": "https://github.com/rasta0501/scripts/tree/main/surge/modules/10010v4",
+      "author": "@xream",
+      "repo": "https://github.com/Rasta0501/scripts/tree/main/surge/modules/10010v4",
       "scripts": [
         {
           "name": "发送验证码（填手机号, 保存, 执行）",
-          "script": "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v4/10010_send_sms.js"
+          "script": "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v4/10010_send_sms.js"
         },
         {
           "name": "用验证码登录（填手机号, 验证码, 保存, 执行 ⚠️ 执行后 记得刷新）",
-          "script": "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v4/10010_sms_sign.js"
+          "script": "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v4/10010_sms_sign.js"
         },
         {
           "name": "手动执行查询（⚠️ 执行后 记得刷新）",
-          "script": "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v4/10010.js"
+          "script": "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v4/10010.js"
         }
       ],
       "settings": [
         {
-          "id": "@rasta0501.10010v4.debug",
+          "id": "@xream.10010v4.debug",
           "name": "调试模式",
           "val": false,
           "type": "boolean",
@@ -76,7 +76,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "默认不开启调试. 开启后将推送各种调试信息"
         },
         {
-          "id": "@rasta0501.10010v4.mobile",
+          "id": "@xream.10010v4.mobile",
           "name": "手机号",
           "val": "",
           "type": "text",
@@ -84,7 +84,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "联通客户端登录手机号"
         },
         {
-          "id": "@rasta0501.10010v4.code",
+          "id": "@xream.10010v4.code",
           "name": "验证码(执行验证码登录才需要填)",
           "placeholder": "",
           "val": "",
@@ -93,7 +93,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "登录短信验证码"
         },
         {
-          "id": "@rasta0501.10010v4.password",
+          "id": "@xream.10010v4.password",
           "name": "服务密码",
           "val": "",
           "type": "text",
@@ -101,7 +101,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "联通客户端登录的服务密码"
         },
         {
-          "id": "@rasta0501.10010v4.appId",
+          "id": "@xream.10010v4.appId",
           "name": "appId",
           "val": "",
           "type": "text",
@@ -109,19 +109,19 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "联通客户端 appId"
         },
         {
-          "id": "@rasta0501.10010v4.cookie",
+          "id": "@xream.10010v4.cookie",
           "name": "Cookie",
           "val": "",
           "type": "text"
         },
         {
-          "id": "@rasta0501.10010v4.token_online",
+          "id": "@xream.10010v4.token_online",
           "name": "tokenOnline",
           "val": "",
           "type": "text"
         },
         {
-          "id": "@rasta0501.10010v4.min_usage",
+          "id": "@xream.10010v4.min_usage",
           "name": "最小用量通知阈值(单位 M) ",
           "val": 0,
           "type": "number",
@@ -129,7 +129,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "通知模板内的任一一项用量 >= 该数值时 才会通知. 例 [通用有限.用量] 表示这段时间内 有限的通用包的差额. 如果你要无变化时不通知, 这里可以设为 0.01"
         },
         {
-          "id": "@rasta0501.10010v4.normal_limited_only",
+          "id": "@xream.10010v4.normal_limited_only",
           "name": "仅在 [通用有限.用量] >= 最小用量通知阈值 时, 进行通知",
           "val": false,
           "type": "boolean",
@@ -137,7 +137,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "默认关闭. 开启后, 仅在 [通用有限.用量] >= 最小用量通知阈值 时, 才会通知"
         },
         {
-          "id": "@rasta0501.10010v4.script_only",
+          "id": "@xream.10010v4.script_only",
           "name": "仅在常规执行时更新上次数据",
           "val": false,
           "type": "boolean",
@@ -145,7 +145,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "默认关闭. 开启后, 面板/请求等情况触发时, 不会更新上次数据, 从而不影响常规执行时的时长用量数据"
         },
         {
-          "id": "@rasta0501.10010v4.title",
+          "id": "@xream.10010v4.title",
           "name": "通知标题模板",
           "val": "",
           "type": "textarea",
@@ -153,7 +153,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "默认: [套餐], 例: 流邦卡19元套餐. 变量看文档"
         },
         {
-          "id": "@rasta0501.10010v4.subt",
+          "id": "@xream.10010v4.subt",
           "name": "通知副标题模板",
           "val": "",
           "type": "textarea",
@@ -161,7 +161,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "默认: [时长] 跳 [所有通用.用量] 免 [所有免流.用量], 例: 18分钟 跳 10M 免 10M. 变量看文档"
         },
         {
-          "id": "@rasta0501.10010v4.desc",
+          "id": "@xream.10010v4.desc",
           "name": "通知正文模板",
           "val": "",
           "type": "textarea",
@@ -169,7 +169,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "默认: 通用剩 [通用有限.剩余] 免流剩 [免流有限.剩余], 例: 通用剩 5.03G 免流剩 26.35G. 若定向无限, 推荐使用: 剩 [通用有限.剩余] 今用 [所有通用.今日用量] 今免 [所有免流.今日用量] 变量看文档"
         },
         {
-          "id": "@rasta0501.10010v4.bark",
+          "id": "@xream.10010v4.bark",
           "name": "使用 Bark 通知",
           "val": "",
           "type": "textarea",
@@ -177,46 +177,46 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "[推送标题]/[推送内容]会被自动替换 形如 https://api.day.app/XXXXXXXXX/[推送标题]/[推送内容]?group=10010&autoCopy=1&isArchive=1&icon=https%3A%2F%2Fraw.githubusercontent.com%2Fanker1209%2Ficon%2Fmain%2Fzglt.png&sound=shake&level=timeSensitive 具体看文档"
         },
         {
-          "id": "@rasta0501.10010v4.pkgs",
+          "id": "@xream.10010v4.pkgs",
           "name": "包详情 JSON",
           "val": "",
           "type": "text"
         },
         {
-          "id": "@rasta0501.10010v4.last",
+          "id": "@xream.10010v4.last",
           "name": "上次数据 JSON",
           "val": "",
           "type": "text"
         },
         {
-          "id": "@rasta0501.10010v4.today",
+          "id": "@xream.10010v4.today",
           "name": "今日数据 JSON",
           "val": "",
           "type": "text"
         },
         {
-          "id": "@rasta0501.10010v4.config",
+          "id": "@xream.10010v4.config",
           "name": "设置",
           "val": "",
           "type": "text"
         },
         {
-          "id": "@rasta0501.10010v4.vars",
+          "id": "@xream.10010v4.vars",
           "name": "变量",
           "val": "",
           "type": "text"
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png",
-        "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png"
+        "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png",
+        "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png"
       ]
     },
     {
-      "id": "rasta0501.10010v3",
+      "id": "xream.10010v3",
       "name": "联通余量(v3) 请使用 v4",
       "descs_html": [
-        "<a href=\"https://github.com/rasta0501/scripts/tree/main/surge/modules/10010v3\">查看文档</a>",
+        "<a href=\"https://github.com/Rasta0501/scripts/tree/main/surge/modules/10010v3\">查看文档</a>",
         "<b>登录方式一</b>",
         "仅填写手机号密码和appId 保存 即可自动登录",
         "<b>登录方式二</b>",
@@ -226,71 +226,71 @@ rasta0501        "@rasta0501.10010v4.subt",
         "<a onClick=\"window.location.reload(true);\">刷新</a>"
       ],
       "keys": [
-        "@rasta0501.10010.mobile",
-        "@rasta0501.10010.password",
-        "@rasta0501.10010.cookie",
-        "@rasta0501.10010.tokenOnline",
-        "@rasta0501.10010.appId",
-        "@rasta0501.10010.disabled",
-        "@rasta0501.10010.debug",
-        "@rasta0501.10010.systemNotifyDisabled",
-        "@rasta0501.10010.requestNotifyDisabled",
-        "@rasta0501.10010.panelNotifyDisabled",
-        "@rasta0501.10010.tileNotifyDisabled",
-        "@rasta0501.10010.notifyDisabled",
-        "@rasta0501.10010.excludeRemainPkg",
-        "@rasta0501.10010.freePkg",
-        "@rasta0501.10010.otherPkg",
-        "@rasta0501.10010.ignoreFlow",
-        "@rasta0501.10010.remainFlowOnly",
-        "@rasta0501.10010.title",
-        "@rasta0501.10010.subtitle",
-        "@rasta0501.10010.body",
-        "@rasta0501.10010.bark",
-        "@rasta0501.10010.otherPkgTpl",
-        "@rasta0501.10010.detail",
-        "@rasta0501.10010.detailText"
+        "@xream.10010.mobile",
+        "@xream.10010.password",
+        "@xream.10010.cookie",
+        "@xream.10010.tokenOnline",
+        "@xream.10010.appId",
+        "@xream.10010.disabled",
+        "@xream.10010.debug",
+        "@xream.10010.systemNotifyDisabled",
+        "@xream.10010.requestNotifyDisabled",
+        "@xream.10010.panelNotifyDisabled",
+        "@xream.10010.tileNotifyDisabled",
+        "@xream.10010.notifyDisabled",
+        "@xream.10010.excludeRemainPkg",
+        "@xream.10010.freePkg",
+        "@xream.10010.otherPkg",
+        "@xream.10010.ignoreFlow",
+        "@xream.10010.remainFlowOnly",
+        "@xream.10010.title",
+        "@xream.10010.subtitle",
+        "@xream.10010.body",
+        "@xream.10010.bark",
+        "@xream.10010.otherPkgTpl",
+        "@xream.10010.detail",
+        "@xream.10010.detailText"
       ],
-      "author": "@rasta0501",
-      "repo": "https://github.com/rasta0501/scripts/tree/main/surge/modules/10010v3",
+      "author": "@xream",
+      "repo": "https://github.com/Rasta0501/scripts/tree/main/surge/modules/10010v3",
       "scripts": [
         {
           "name": "发送验证码(填手机号,保存,再执行)",
-          "script": "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v3/10010_send_sms.js"
+          "script": "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v3/10010_send_sms.js"
         },
         {
           "name": "用验证码登录(填手机号,验证码,保存,再执行)",
-          "script": "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v3/10010_sms_sign.js"
+          "script": "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v3/10010_sms_sign.js"
         },
         {
           "name": "手动执行",
-          "script": "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v3/10010.js"
+          "script": "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v3/10010.js"
         }
       ],
       "settings": [
         {
-          "id": "@rasta0501.10010.disabled",
+          "id": "@xream.10010.disabled",
           "name": "禁用",
           "val": false,
           "type": "boolean",
           "desc": "可随时在此处禁用该脚本"
         },
         {
-          "id": "@rasta0501.10010.debug",
+          "id": "@xream.10010.debug",
           "name": "调试模式",
           "val": false,
           "type": "boolean",
           "desc": "默认不开启调试. 开启后将推送自动登录等信息"
         },
         {
-          "id": "@rasta0501.10010.mobile",
+          "id": "@xream.10010.mobile",
           "name": "手机号",
           "val": "",
           "type": "text",
           "desc": "联通客户端登录手机号"
         },
         {
-          "id": "@rasta0501.10010.code",
+          "id": "@xream.10010.code",
           "name": "验证码(执行验证码登录才需要填)",
           "placeholder": "",
           "val": "",
@@ -298,140 +298,140 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": "登录短信验证码"
         },
         {
-          "id": "@rasta0501.10010.password",
+          "id": "@xream.10010.password",
           "name": "密码",
           "val": "",
           "type": "text",
           "desc": "联通客户端登录密码"
         },
         {
-          "id": "@rasta0501.10010.appId",
+          "id": "@xream.10010.appId",
           "name": "appId(仅填写手机号密码和appId 即可自动登录)",
           "val": "",
           "type": "text",
           "desc": "联通客户端 appId"
         },
         {
-          "id": "@rasta0501.10010.cookie",
+          "id": "@xream.10010.cookie",
           "name": "Cookie(一般情况下不需要手动填)",
           "val": "",
           "type": "text",
           "desc": "Cookie"
         },
         {
-          "id": "@rasta0501.10010.tokenOnline",
+          "id": "@xream.10010.tokenOnline",
           "name": "TokenOnline(不需要手动填 自动续登录用的)",
           "val": "",
           "type": "text",
           "desc": "TokenOnline"
         },
         {
-          "id": "@rasta0501.10010.excludeRemainPkg",
+          "id": "@xream.10010.excludeRemainPkg",
           "name": "不计算剩余流量的流量包名正则",
           "val": "",
           "type": "text",
           "desc": "在联通原始值不正确时 进行修正. 例 (定向流量|免流资费|免费流量) , 匹配的包不计算剩余"
         },
         {
-          "id": "@rasta0501.10010.freePkg",
+          "id": "@xream.10010.freePkg",
           "name": "叠加到免流流量的流量包名正则",
           "val": "",
           "type": "text",
           "desc": "在联通原始值不正确时 进行修正. 例 设置 (定向流量|免流资费|免费流量), 匹配的包叠加到总免流流量"
         },
         {
-          "id": "@rasta0501.10010.otherPkg",
+          "id": "@xream.10010.otherPkg",
           "name": "需要单独显示的流量包名正则",
           "val": "",
           "type": "text",
           "desc": "例 设置 (加油包|福利|学习强国), 将显示 剩余 536.98M 加油包 46.12M 福利 490.86M 学习强国 1234.56M 免流 41.66G"
         },
         {
-          "id": "@rasta0501.10010.ignoreFlow",
+          "id": "@xream.10010.ignoreFlow",
           "name": "流量变化忽略阈值(单位 M) ",
           "val": 0,
           "type": "number",
           "desc": "小于此数值的流量变化不通知. ⚠️ 就是说大于等于此数值会通知. 如果你要无变化时不通知, 这里可以设为0.01"
         },
         {
-          "id": "@rasta0501.10010.remainFlowOnly",
+          "id": "@xream.10010.remainFlowOnly",
           "name": "当前时间段内有*非免流*才会通知",
           "val": false,
           "type": "boolean",
           "desc": "默认关闭, 所有用量都会通知. 开启后, 当前时间段内有*非免流*且流量变化大于等于流量变化忽略阈值才会通知. ⚠️ 如果你要无变化时不通知, 记得把流量变化忽略阈值设为 0.01"
         },
         {
-          "id": "@rasta0501.10010.title",
+          "id": "@xream.10010.title",
           "name": "通知标题模板",
           "val": "",
           "type": "text",
           "desc": "默认: [套], 例: 流邦卡19元套餐"
         },
         {
-          "id": "@rasta0501.10010.subtitle",
+          "id": "@xream.10010.subtitle",
           "name": "通知副标题模板",
           "val": "",
           "type": "text",
           "desc": "默认: 时长 [时] 跳 [跳] 免 [免], 例: 时长 1分钟 跳 10M 免 10M"
         },
         {
-          "id": "@rasta0501.10010.body",
+          "id": "@xream.10010.body",
           "name": "通知正文模板",
           "val": "",
           "type": "textarea",
           "desc": "默认: 剩余 [剩] [单] 免流 [总免], 例: 剩余 5.03G 福利 1G 免流 26.35G"
         },
         {
-          "id": "@rasta0501.10010.otherPkgTpl",
+          "id": "@xream.10010.otherPkgTpl",
           "name": "通知单独显示的包名模板(即 [单] 的内部模板)",
           "val": "",
           "type": "textarea",
           "desc": "默认: [包] 剩余[剩] 已用[用], 例: 福利包 剩余 1G 已用 1G"
         },
         {
-          "id": "@rasta0501.10010.bark",
+          "id": "@xream.10010.bark",
           "name": "使用 Bark 通知而不是当前 app 的通知",
           "val": "",
           "type": "textarea",
           "desc": "[推送标题]/[推送内容]会被自动替换 形如 https://api.day.app/XXXXXXXXX/[推送标题]/[推送内容]?group=10010&autoCopy=1&isArchive=1&icon=https%3A%2F%2Fraw.githubusercontent.com%2Fanker1209%2Ficon%2Fmain%2Fzglt.png&sound=shake&level=timeSensitive"
         },
         {
-          "id": "@rasta0501.10010.systemNotifyDisabled",
+          "id": "@xream.10010.systemNotifyDisabled",
           "name": "禁用联通系统升级时的通知",
           "val": false,
           "type": "boolean",
           "desc": "默认启用"
         },
         {
-          "id": "@rasta0501.10010.requestNotifyDisabled",
+          "id": "@xream.10010.requestNotifyDisabled",
           "name": "禁用作为请求脚本使用时的通知",
           "val": false,
           "type": "boolean",
           "desc": "默认启用"
         },
         {
-          "id": "@rasta0501.10010.panelNotifyDisabled",
+          "id": "@xream.10010.panelNotifyDisabled",
           "name": "禁用作为 Surge 面板 (Panel) 脚本使用时的通知",
           "val": false,
           "type": "boolean",
           "desc": "默认启用"
         },
         {
-          "id": "@rasta0501.10010.tileNotifyDisabled",
+          "id": "@xream.10010.tileNotifyDisabled",
           "name": "禁用作为 Stash 面板 (Tile) 脚本使用时的通知",
           "val": false,
           "type": "boolean",
           "desc": "默认启用"
         },
         {
-          "id": "@rasta0501.10010.notifyDisabled",
+          "id": "@xream.10010.notifyDisabled",
           "name": "禁用通知",
           "val": false,
           "type": "boolean",
           "desc": "默认启用"
         },
         {
-          "id": "@rasta0501.10010.detailText",
+          "id": "@xream.10010.detailText",
           "name": "详情文本",
           "val": "",
           "type": "textarea",
@@ -441,7 +441,7 @@ rasta0501        "@rasta0501.10010v4.subt",
           "desc": ""
         },
         {
-          "id": "@rasta0501.10010.detail",
+          "id": "@xream.10010.detail",
           "name": "详情数据",
           "val": "",
           "type": "textarea",
@@ -451,8 +451,8 @@ rasta0501        "@rasta0501.10010v4.subt",
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png",
-        "https://raw.githubusercontent.com/rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png"
+        "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png",
+        "https://raw.githubusercontent.com/Rasta0501/scripts/main/surge/modules/10010v3/assets/icon.png"
       ]
     }
   ]
